@@ -53,17 +53,22 @@ const deliverydays=(days)=>{
         i--
         console.log(i)
     }
+
+
     
     
-    const printFeedBack=(feedbacks)=>{
-        let feedback=["amaizing","pretty good","you deserve excellence"];
+    let feedback=["amaizing","pretty good","you deserve excellence"];
+    const printFeedBack=(feedback)=>{
+       let i=0;
         do{
             console.log(`You did ${feedback} job`);
-            feedback--;
+            feedback++;
         }
-        while (feedback<=feedbacks);
+        while (i<=feedback.length);
     }
-    printFeedBack(4);
+    printFeedBack(feedback);
+
+
     
     const loginFeedback=(loginfeedbacks)=>{
         loginfeedbacks.forEach((loginfeedback)=>{
